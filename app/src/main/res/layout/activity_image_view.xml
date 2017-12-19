@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/image_root"
+    android:padding="@dimen/mim_distance"
+    tools:context="com.lzx.onematerial.activity.ImageViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/image_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="shareImage"/>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|right">
+        <ImageButton
+            android:id="@+id/image_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_download"/>
+        <ImageButton
+            android:id="@+id/image_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_share"/>
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/image_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="56dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:id="@+id/image_author"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:textColor="#eee"/>
+            <ImageButton
+                android:id="@+id/image_bottom_sheet_toggle"
+                android:src="@drawable/ic_action_share"
+                android:background="@android:color/transparent"
+                android:layout_gravity="end"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/image_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#eee"/>
+            <TextView
+                android:id="@+id/image_words_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:textColor="#eee"
+                />
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/image_download"
+                    android:src="@drawable/ic_action_download"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_wb"
+                    android:src="@drawable/ssdk_oks_classic_sinaweibo"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_qq"
+                    android:src="@drawable/ssdk_oks_classic_qq"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_qzone"
+                    android:src="@drawable/ssdk_oks_classic_qzone"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_wx_friend"
+                    android:src="@drawable/ssdk_oks_classic_wechat"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_wx_circle"
+                    android:src="@drawable/ssdk_oks_classic_wechatmoments"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_wx_collect"
+                    android:src="@drawable/ssdk_oks_classic_wechatfavorite"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+                <ImageButton
+                    android:id="@+id/image_share_pocket"
+                    android:src="@drawable/ssdk_oks_classic_pocket"
+                    android:background="@android:color/transparent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

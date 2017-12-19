@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lzx.onematerial.activity.SearchActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        app:elevation="30dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/search_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            app:contentInsetStart="8dp">
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_box"
+                style="@style/SearchViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultQueryHint="@string/action_search"
+                app:queryHint="@string/action_search">
+            </android.support.v7.widget.SearchView>
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/search_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabIndicatorHeight="4dp"
+            app:tabBackground="@color/colorPrimary"
+            app:tabIndicatorColor="@color/cardview_light_background"
+            app:tabTextColor="@color/cardview_light_background"
+            app:tabSelectedTextColor="@color/cardview_light_background">
+            <android.support.design.widget.TabItem
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="@string/tab_picture" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="@string/tab_reading"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="@string/tab_music"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="@string/tab_movie" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="@string/tab_radio"/>
+            <android.support.design.widget.TabItem
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="@string/tab_author"/>
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.lzx.onematerial.ui.MyViewPager
+        android:id="@+id/serach_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="102dp">
+    </com.lzx.onematerial.ui.MyViewPager>
+</android.support.design.widget.CoordinatorLayout>

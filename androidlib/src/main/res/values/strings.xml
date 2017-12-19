@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">androidLib</string>
+
+    <string name="double_clikc_exit">再按一次退出应用</string>
+</resources>

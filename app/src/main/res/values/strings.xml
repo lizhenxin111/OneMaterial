@@ -1,0 +1,96 @@
+﻿<resources>
+    <string name="app_name">OneMaterial</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="app_label">搜索</string>
+    <string name="search_hint">搜索</string>
+
+
+    <string name="action_search">搜索</string>
+    <string name="action_settings">设置</string>
+
+    <string name="main_title">一  个</string>
+
+    <string name="loading">缓冲中</string>
+    <string name="downloading">下载中</string>
+    <string name="file_not_exist">文件不存在，请重新下载</string>
+
+    <string name="main_offline_text">无网络连接，点击刷新</string>
+
+    <string name="nav_tip">手势指南</string>
+    <string name="nav_day">每日内容</string>
+    <string name="nav_settings">设置</string>
+    <string name="motion_tip">手势使用指南</string>
+    <string name="motion_tip_content">主界面向左滑动：查看下一天的内容\n\n主界面向右滑动：查看上一天的内容\n\n长按每日一图卡片：分享\n\n长按文章卡片上的图片：保存图片\n\n\n</string>
+
+    <string name="update">更新</string>
+    <string name="autoupdate">自动更新</string>
+
+    <string name="update_title">更新内容</string>
+    <string name="update_none">暂无更新</string>
+    <string name="update_yes">是</string>
+    <string name="update_no">否</string>
+    <string name="update_offline">无网络连接</string>
+
+    <string name="popup_save">保存图片</string>
+
+    <string name="image_exist">图片已经存在</string>
+    <string name="save_complete">保存成功</string>
+
+    <string name="swipe_last_day">继续滑动显示前一天的内容</string>
+    <string name="swipe_next_day">继续滑动显示后一天的内容</string>
+
+    <string name="toast_first_day">已经是第一天了</string>
+    <string name="toast_last_day">已经是最后一天了</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="permission_denied">存储权限被拒绝，无法下载图片。</string>
+
+    <string name="webview_reload">重新加载</string>
+    <string name="webview_remove_ads">去除广告</string>
+
+    <string name="tab_picture">图文</string>
+    <string name="tab_question">问答</string>
+    <string name="tab_reading">阅读</string>
+    <string name="tab_serials">连载</string>
+    <string name="tab_movie">影视</string>
+    <string name="tab_music">音乐</string>
+    <string name="tab_radio">电台</string>
+    <string name="tab_author">作者</string>
+
+
+    <string name="nav_one">一个</string>
+    <string name="nav_topic">专题</string>
+    <string name="nav_category">分类</string>
+
+
+    <string name="share_complete">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_cancel">取消分享</string>
+
+    <string name="popup_download">下载</string>
+    <string name="popup_share">分享</string>
+
+
+    <string name="category_radio">- 深夜电台 -</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_author">AuthorActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="title_activity_article">ArticleActivity</string>
+</resources>

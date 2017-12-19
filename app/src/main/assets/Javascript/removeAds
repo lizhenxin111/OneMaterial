@@ -1,0 +1,8 @@
+var e = document.querySelectorAll("iframe");
+for(var i = 0; i < e.length; i++){
+    e[i].parentNode.removeChild(e[i]);
+}
+var h = document.getElementById("_so_s4_xofs48q54pp");
+if(h!=null) {h.parentNode.removeChild(h);}
+var i = document.getElementById("_so_zwd91zcr1tg");
+if(i!=null) {i.parentNode.removeChild(i);}

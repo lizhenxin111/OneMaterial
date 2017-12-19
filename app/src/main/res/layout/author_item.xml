@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mim_distance"
+    android:layout_marginLeft="@dimen/universal_pagging"
+    android:layout_marginRight="@dimen/universal_pagging"
+    android:elevation="30dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:padding="8dp"
+        android:id="@+id/author_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/author_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:layout_constraintLeft_toLeftOf="@id/author_constraint"
+            app:layout_constraintBottom_toBottomOf="@id/author_constraint"
+            app:layout_constraintTop_toTopOf="@id/author_constraint"
+            />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/universal_pagging"
+            app:layout_constraintLeft_toRightOf="@id/author_image"
+            app:layout_constraintTop_toTopOf="@id/author_constraint"/>
+
+        <TextView
+            android:id="@+id/author_summary"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/universal_pagging"
+            app:layout_constraintLeft_toRightOf="@id/author_image"
+            app:layout_constraintRight_toRightOf="@id/author_constraint"
+            app:layout_constraintBottom_toBottomOf="@id/author_constraint"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

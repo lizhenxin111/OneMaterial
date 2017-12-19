@@ -1,0 +1,39 @@
+评论：
+http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ content_id /0?channel=huawei&sign=2817d714bd93794642f4267d2256d37c&version=4.3.4&uuid=&platform=android
+
+
+
+获取content_id：
+topic： http://v3.wufazhuce.com:8000/api/banner/list/3?version=4.3.4&platform=android
+其他专题：http://v3.wufazhuce.com:8000/api/banner/list/4?last_id=0&channel=huawei&sign=864580d751dc76a37b9d3993c898548a&version=4.3.4&uuid=&platform=android
+（加载更多其他专题：上面链接last_id=上一次加载的最后一项的id）
+热门作者：http://v3.wufazhuce.com:8000/api/author/hot?channel=huawei&sign=2817d714bd93794642f4267d2256d37c&version=4.3.4&uuid=&platform=android
+问答专题：http://v3.wufazhuce.com:8000/api/banner/list/5?channel=huawei&sign=2817d714bd93794642f4267d2256d37c&version=4.3.4&uuid=&platform=android
+
+
+分类
+category（以html形式返回）：图文 0； 问答 3；  阅读 1； 连载 2； 影视 5； 音乐 4； 电台 8；作者 10
+http://v3.wufazhuce.com:8000/api/all/list/3?channel=huawei&sign=2817d714bd93794642f4267d2256d37c&version=4.3.4&uuid=&platform=android
+
+
+获取详细内容：
+topic：category=11：文章列表，用http://m.wufazhuce.com/topic/content_id?channel=qq打开
+		category=14: 商城，打开link_url
+作者信息：http://v3.wufazhuce.com:8000/api/author/info?channel=huawei&sign=3b5c870db41602caa6a895308077c11e& author_id=user_id &version=4.3.4&uuid=&platform=android
+作者作品：http://v3.wufazhuce.com:8000/api/author/works?channel=huawei&sign=469b5754f342fdbe5111d643d5821142& page_num=页数 & author_id=user_id &version=4.3.4&uuid=&platform=android
+
+
+分类：
+http://v3.wufazhuce.com:8000/api/hp/feeds/1899/0?channel=huawei&sign=2817d714bd93794642f4267d2256d37c&version=4.3.4&uuid=&platform=android
+
+
+
+搜索
+http://v3.wufazhuce.com:8000/api/search/分类/搜索内容/0?channel=huawei&sign=2817d714bd93794642f4267d2256d37c&version=4.3.4&uuid=&platform=android
+分类：图文 hp； 阅读 essay； 音乐 music； 影视 movie； 深夜电台 radio； 作者音乐人 author；
+搜索内容：采用URL编码的文字
+图片：http://v3.wufazhuce.com:8000/api/hp/feeds/content_id/0?version=4.3.4&platform=android
+阅读：http://v3.wufazhuce.com:8000/api/essay/htmlcontent/content_id?version=4.3.4&platform=android
+音乐：http://v3.wufazhuce.com:8000/api/music/htmlcontent/content_id?version=4.3.4&platform=android
+电影：http://v3.wufazhuce.com:8000/api/movie/htmlcontent/content_id?version=4.3.4&platform=android
+电台：http://v3.wufazhuce.com:8000/api/radio/htmlcontent/content_id?version=4.3.4&platform=android

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/radio_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp"
+    android:elevation="30dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/day_radio_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/day_radio_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="shareImageView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/radio_toggle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="8dp"
+            android:background="@mipmap/bg_play"
+            app:layout_constraintRight_toRightOf="@id/day_radio_pic"
+            app:layout_constraintBottom_toBottomOf="@id/day_radio_pic"/>
+
+        <TextView
+            android:id="@+id/day_radio_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/day_radio_pic"
+            android:layout_margin="16dp"
+            android:textSize="@dimen/wordsize_subtitle"
+            android:transitionName="shareIitle" />
+        <TextView
+            android:id="@+id/day_radio_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/day_radio_author"
+            app:layout_constraintTop_toBottomOf="@id/day_radio_title"
+            android:text="@string/category_radio"
+            android:layout_margin="16dp"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/day_radio_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/day_radio_category"
+            app:layout_constraintTop_toBottomOf="@id/day_radio_title"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAlignment="textEnd"
+            android:layout_margin="16dp"
+            android:textSize="10sp" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

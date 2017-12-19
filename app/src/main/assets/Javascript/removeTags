@@ -1,0 +1,15 @@
+var a = document.querySelector("div.header");
+if(a != null) {a.parentNode.removeChild(a);}
+var b = document.querySelector("div.footer");
+if(b!= null) {b.parentNode.removeChild(b);}
+var c = document.querySelector("img.one-image-exclude");
+if(c != null) {c.parentNode.removeChild(c);}
+var d = document.getElementsByClassName("text-title")[0];
+if(d != null) {d.style.marginTop="8px";}
+var f = document.getElementsByClassName('text-detail')[0];
+if(f != null) {
+    var ff = f.getElementsByTagName('div')[0];
+    if(ff != null) {ff.style.marginTop = "0";}
+}
+var g = document.getElementsByClassName("one-page-special-theme1")[0];
+if(g != null) {g.style.marginTop = "0";}

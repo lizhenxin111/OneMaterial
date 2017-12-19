@@ -1,0 +1,14 @@
+var a = document.querySelector("div.header");
+a.parentNode.removeChild(a);
+var b = document.querySelector("div.footer");
+b.parentNode.removeChild(b);
+var c = document.querySelector("img.one-image-exclude");
+c.parentNode.removeChild(c);
+var d = document.getElementsByClassName("text-title")[0];
+d.style.marginTop="8px";
+var e = document.querySelectorAll("iframe");
+for(var i = 0; i < e.length; i++){
+    e[i].parentNode.removeChild(e[i]);
+}
+var f = document.getElementsByClassName('text-detail')[0].getElementsByTagName('div')[0];
+f.style.marginTop = "0";
